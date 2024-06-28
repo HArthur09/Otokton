@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTOKTON</title>
+    <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <form id="signupForm">
+                <h1>Créer un compte</h1>
+                <input type="text" id="pseudo" placeholder="pseudo" required />
+                <input type="text" id="name" placeholder="Nom" required />
+                <input type="text" id="prenom" placeholder="Prenom" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <input type="password" id="password" placeholder="Mot de passe" required />
+                <input type="text" id="number" placeholder="+237 ---" required />
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form id="loginForm">
+                <h1>Se connecter</h1>
+                <input type="email" id="loginEmail" placeholder="Email" required />
+                <input type="password" id="loginPassword" placeholder="Mot de passe" required />
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bienvenue !</h1>
+                    <p>Pour rester en contact avec nous, veuillez vous connecter avec vos informations personnelles</p>
+                    <button class="ghost" id="signIn">Se connecter</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Bonjour, Ami!</h1>
+                    <p>Entrez vos informations personnelles et commencez votre voyage avec nous</p>
+                    <button class="ghost" id="signUp">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../backend/connexion.js"></script>
+</body>
+</html>

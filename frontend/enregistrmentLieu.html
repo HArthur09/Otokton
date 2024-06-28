@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Événement</title>
+</head>
+<body>
+    <h1>Ajouter un Événement</h1>
+    <form id="eventForm">
+        <label for="name">Nom de l'événement:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" required></textarea><br><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="location">Lieu:</label><br>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <script src="form.js"></script>
+</body>
+</html>
